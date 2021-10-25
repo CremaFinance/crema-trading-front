@@ -24,6 +24,20 @@ export default function BalancesTable({
 
   async function onSettleFunds(market, openOrders) {
     try {
+      // console.log(market,'market##')
+      // console.log(openOrders,'openOrders##')
+      // console.log(connection,'connection##')
+      // console.log(wallet,'wallet##')
+      // console.log(getSelectedTokenAccountForMint(
+      //   accounts,
+      //   market?.baseMintAddress,
+      // ))
+      // console.log(getSelectedTokenAccountForMint(
+      //   accounts,
+      //   market?.quoteMintAddress,
+      // ))
+      // console.log(usdcRef,'usdcRef##')
+      // console.log(usdtRef,'usdtRef##')
       await settleFunds({
         market,
         openOrders,
