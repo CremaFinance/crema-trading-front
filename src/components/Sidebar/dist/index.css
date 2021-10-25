@@ -1,0 +1,351 @@
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: #171524 !important;
+  background-size: 80% auto;
+  position: relative;
+  padding-bottom: 300px;
+  box-sizing: border-box;
+}
+.sidebar * {
+  transition: all 0.3s;
+}
+.sidebar.close {
+  width: 96px;
+}
+.sidebar.close .menu-list > li {
+  flex-direction: column;
+  padding-left: 0px;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+.sidebar.close .menu-list > li span {
+  margin-left: 0px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.sidebar.close .menu-list > li .icon {
+  margin-left: 0px;
+}
+.sidebar.close .menu-list > li.have-sub-menu {
+  height: auto;
+}
+.sidebar.close .menu-list > li.have-sub-menu .title {
+  flex-direction: column;
+  height: auto;
+}
+.sidebar.close .menu-list > li.have-sub-menu .title .right {
+  width: 96px;
+  justify-content: center;
+  margin-top: 4px;
+}
+.sidebar.close .menu-list > li.have-sub-menu .title .icon-down {
+  width: 14px;
+  height: 14px;
+  margin-left: 8px;
+  display: none;
+}
+.sidebar.close .menu-list > li.have-sub-menu .sub-menu-list {
+  width: 96px;
+  font-size: 12px;
+  padding-left: 0px;
+  text-align: center;
+  padding-top: 10px;
+}
+.sidebar.close .menu-list > li.have-sub-menu .sub-menu-list li {
+  margin-top: 0px;
+  height: 40px;
+  line-height: 40px;
+}
+.sidebar.close .menu-list > li.have-sub-menu .sub-menu-list li img {
+  display: none;
+}
+.sidebar.close .bottom {
+  left: 0px;
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 40px;
+}
+.sidebar.close .bottom .guide {
+  position: absolute;
+  left: 22px;
+  bottom: 74px;
+  cursor: pointer;
+  z-index: 9999;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.sidebar.close .bottom .guide a {
+  display: none;
+}
+.sidebar.close .bottom .guide.active {
+  width: 177px;
+}
+.sidebar.close .bottom .guide.active a {
+  display: inline-block;
+}
+.sidebar.close .bottom .test-guide {
+  bottom: 146px;
+}
+.sidebar.close .bottom .contact-list {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  padding: 0px 14px;
+  height: 36px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 22px;
+  bottom: 0px;
+  z-index: 9999;
+}
+.sidebar.close .bottom .contact-list a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+.sidebar.close .bottom .contact-list.active {
+  width: 272px;
+}
+.sidebar.close .logo {
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 12px;
+}
+.sidebar.close .logo .open-logo {
+  display: none;
+  height: 36px;
+}
+.sidebar.close .logo .close-logo {
+  display: inline-block;
+  height: 60px;
+}
+.sidebar .logo {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  height: 80px;
+}
+.sidebar .logo .open-logo {
+  display: block;
+}
+.sidebar .logo .close-logo {
+  display: none;
+}
+.sidebar .logo img {
+  height: 40px;
+}
+.sidebar .toggle-btn {
+  width: 12px;
+  position: absolute;
+  left: 0px;
+  bottom: 156px;
+  cursor: pointer;
+  z-index: 999999;
+}
+.sidebar .menu-list li {
+  cursor: pointer;
+  margin-top: 20px;
+}
+.sidebar .menu-list > li {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .menu-list > li.active span,
+.sidebar .menu-list > li:hover span {
+  color: #fff;
+}
+.sidebar .menu-list > li.active .icon,
+.sidebar .menu-list > li:hover .icon {
+  fill: #fff;
+}
+.sidebar .menu-list > li.active {
+  background: rgba(255, 255, 255, 0.04);
+}
+.sidebar .menu-list > li.active::after {
+  content: '';
+  width: 2px;
+  height: 20px;
+  background: #07ebad;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.sidebar .menu-list > li img {
+  width: 28px;
+  height: 28px;
+}
+.sidebar .menu-list > li span {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 10px;
+}
+.sidebar .menu-list > li .icon {
+  width: 28px;
+  height: 28px;
+  fill: rgba(255, 255, 255, 0.5);
+  margin-left: 20px;
+}
+.sidebar .menu-list > li .icon.open {
+  transform: rotate(180deg);
+}
+.sidebar .menu-list > li .icon-down {
+  width: 14px;
+  height: 14px;
+}
+.sidebar .menu-list > li.have-sub-menu {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  height: auto;
+}
+.sidebar .menu-list > li.have-sub-menu .title {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+  position: relative;
+}
+.sidebar .menu-list > li.have-sub-menu .title.active {
+  background: rgba(255, 255, 255, 0.04);
+}
+.sidebar .menu-list > li.have-sub-menu .title.active span {
+  color: #fff;
+}
+.sidebar .menu-list > li.have-sub-menu .title.active svg {
+  fill: #fff;
+}
+.sidebar .menu-list > li.have-sub-menu .title.active::after {
+  content: '';
+  width: 2px;
+  height: 20px;
+  background: #07ebad;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.sidebar .menu-list > li.have-sub-menu .title .right {
+  display: flex;
+  align-items: center;
+}
+.sidebar .menu-list > li.have-sub-menu .sub-menu-list {
+  padding-left: 52px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: height 1s;
+  background: #171524;
+  width: 100%;
+}
+.sidebar .menu-list > li.have-sub-menu .sub-menu-list.open {
+  height: auto;
+}
+.sidebar .menu-list > li.have-sub-menu .sub-menu-list.close {
+  height: 0px;
+}
+.sidebar .menu-list > li.have-sub-menu .sub-menu-list li {
+  position: relative;
+}
+.sidebar .menu-list > li.have-sub-menu .sub-menu-list li.active,
+.sidebar .menu-list > li.have-sub-menu .sub-menu-list li:hover {
+  color: #07ebad;
+}
+.sidebar .menu-list > li.have-sub-menu .sub-menu-list li img {
+  width: 52px;
+  height: 16px;
+  position: absolute;
+  right: 38px;
+  top: -14px;
+}
+.sidebar .bottom {
+  position: absolute;
+  left: 22px;
+  bottom: 40px;
+}
+.sidebar .guide {
+  height: 28px;
+  line-height: 22px;
+  display: block;
+  padding: 0px 14px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 24px;
+  margin-top: 20px;
+}
+.sidebar .guide .icon {
+  width: 18px;
+  height: 18px;
+  fill: rgba(255, 255, 255, 0.5);
+}
+.sidebar .guide a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.sidebar .guide * {
+  vertical-align: middle;
+}
+.sidebar .guide:hover .icon {
+  fill: #fff;
+}
+.sidebar .guide:hover a {
+  color: #fff;
+}
+.sidebar .contact-list {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.sidebar .contact-list a {
+  cursor: pointer;
+  margin-right: 16px;
+}
+.sidebar .contact-list a .icon {
+  width: 18px;
+  height: 18px;
+  fill: rgba(255, 255, 255, 0.5);
+}
+.sidebar .contact-list a:hover .icon {
+  fill: #fff;
+}
+.sidebar .contact-list a:last-child {
+  margin-right: 0px;
+}
+@media screen and (max-width: 750px) {
+  .sidebar {
+    display: none;
+  }
+}
+.swap-menu i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url('../../assets/img/crema/icon-Swap@2x.png');
+  background-size: 100% 100%;
+  margin-right: 8px;
+}
+.have-sub-menu i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url('../../assets/img/crema/icon-Pools@2x.png');
+  background-size: 100% 100%;
+  margin-right: 8px;
+}
+.staking-menu i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url('../../assets/img/crema/icon-Staking@2x.png');
+  background-size: 100% 100%;
+  margin-right: 8px;
+}
