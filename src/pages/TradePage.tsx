@@ -36,6 +36,7 @@ import SRMICon from '../assets/img/crema/SRM.png'
 import USDTIcon from '../assets/img/crema/icon_coin_usdt@2x.png'
 import SOLICon from '../assets/img/crema/icon_SOL@2x.png'
 import USDCIcon from '../assets/img/crema/icon_USDC.png'
+import mainNetLogo from '../assets/img/crema/tag-Mainnet.png'
 
 const { Option, OptGroup } = Select;
 
@@ -195,8 +196,9 @@ function TradePageInner() {
           style={{ paddingLeft: 10, paddingRight: 5, background: 'rgba(255,255,255,0.03)', height: '76px', marginLeft: '0px' }}
           gutter={16}
         >
-          <Col>
+          <Col style={{display: 'flex',alignItems:'center'}}>
             <div className="logo"></div>
+            <img style={{height:'16px',marginRight:'10px'}} src={mainNetLogo} alt="" />
           </Col>
           <Col style={{ padding: '2px', borderRadius: '8px', marginRight: '28px', background: 'linear-gradient(214deg, #59BDAD 0%, #6676F5 61%, #9A89F9 76%, #EBA7FF 100%)' }}>
             <div className="menu-item-active">
@@ -204,12 +206,12 @@ function TradePageInner() {
               <span>Trading</span>
             </div>
           </Col>
-          {/* <Col style={{ padding: '8px 17px', marginRight: '7px', color: 'rgba(255,255,255,0.5)' }}>
-            <div className="menu-item">
+          <Col style={{ padding: '8px 17px', marginRight: '7px', color: 'rgba(255,255,255,0.5)' }}>
+            <div className="menu-item" onClick={() => goUrl('swap')}>
               <img className='page-icon' src={SwapIcon} alt="" />
               <span>Swap</span>
             </div>
-          </Col> */}
+          </Col>
           <Col style={{ padding: '8px 17px', marginRight: '7px', color: 'rgba(255,255,255,0.5)' }}>
             <div className="menu-item" onClick={() => goUrl('pool')}>
               <img className='page-icon' src={PoolsIcon} alt="" />
@@ -228,6 +230,7 @@ function TradePageInner() {
           </Col>
         </Row>
         <Row
+        className='h5-head'
           align="middle"
           style={{ paddingLeft: 5, paddingRight: 5, background: 'rgba(255,255,255,0.03)', height: '76px', marginLeft: '0px', marginTop: '10px' }}
           gutter={16}

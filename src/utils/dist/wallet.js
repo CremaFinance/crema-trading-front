@@ -52,20 +52,20 @@ exports.WALLET_PROVIDERS = [
     adapter: wallet_adapters_1.MathWalletAdapter,
     iconName: 'MathWallet',
   },
-  // {
-  //   name: 'Blocto',
-  //   url: 'https://www.mathwallet.org',
-  //   icon: ASSET_URL + '/mathwallet.svg',
-  //   adapter: wallet_adapters_1.MathWalletAdapter,
-  //   iconName: 'MathWallet',
-  // },
-  // {
-  //   name: 'Bonfida',
-  //   url: 'https://www.mathwallet.org',
-  //   icon: ASSET_URL + '/mathwallet.svg',
-  //   adapter: wallet_adapters_1.MathWalletAdapter,
-  //   iconName: 'MathWallet',
-  // },
+  {
+    name: 'Blocto',
+    // url: 'https://www.mathwallet.org',
+    icon: ASSET_URL + '/mathwallet.svg',
+    adapter: wallet_adapters_1.BloctoWalletAdapter,
+    iconName: 'Unknown',
+  },
+  {
+    name: 'Bonfida',
+    url: 'https://bonfida.com/wallet',
+    icon: ASSET_URL + '/mathwallet.svg',
+    adapter: wallet_adapters_1.BloctoWalletAdapter,
+    iconName: 'Bonfida',
+  },
 ];
 var WalletContext = react_1['default'].createContext(null);
 function WalletProvider(_a) {

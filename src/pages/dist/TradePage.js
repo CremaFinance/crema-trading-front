@@ -55,11 +55,13 @@ var react_router_dom_1 = require('react-router-dom');
 var nanoid_1 = require('nanoid');
 require('../assets/css/tradePage/index.less');
 var icon_Trading_2x_png_1 = require('../assets/img/crema/icon-Trading@2x.png');
+var icon_Swap_2x_png_1 = require('../assets/img/crema/icon-Swap@2x.png');
 var icon_Pools_2x_png_1 = require('../assets/img/crema/icon-Pools@2x.png');
 var SRM_png_1 = require('../assets/img/crema/SRM.png');
 var icon_coin_usdt_2x_png_1 = require('../assets/img/crema/icon_coin_usdt@2x.png');
 var icon_SOL_2x_png_1 = require('../assets/img/crema/icon_SOL@2x.png');
 var icon_USDC_png_1 = require('../assets/img/crema/icon_USDC.png');
+var tag_Mainnet_png_1 = require('../assets/img/crema/tag-Mainnet.png');
 var Option = antd_1.Select.Option,
   OptGroup = antd_1.Select.OptGroup;
 var Wrapper = styled_components_1['default'].div(
@@ -247,8 +249,13 @@ function TradePageInner() {
         },
         react_1['default'].createElement(
           antd_1.Col,
-          null,
+          { style: { display: 'flex', alignItems: 'center' } },
           react_1['default'].createElement('div', { className: 'logo' }),
+          react_1['default'].createElement('img', {
+            style: { height: '16px', marginRight: '10px' },
+            src: tag_Mainnet_png_1['default'],
+            alt: '',
+          }),
         ),
         react_1['default'].createElement(
           antd_1.Col,
@@ -286,6 +293,31 @@ function TradePageInner() {
             {
               className: 'menu-item',
               onClick: function () {
+                return goUrl('swap');
+              },
+            },
+            react_1['default'].createElement('img', {
+              className: 'page-icon',
+              src: icon_Swap_2x_png_1['default'],
+              alt: '',
+            }),
+            react_1['default'].createElement('span', null, 'Swap'),
+          ),
+        ),
+        react_1['default'].createElement(
+          antd_1.Col,
+          {
+            style: {
+              padding: '8px 17px',
+              marginRight: '7px',
+              color: 'rgba(255,255,255,0.5)',
+            },
+          },
+          react_1['default'].createElement(
+            'div',
+            {
+              className: 'menu-item',
+              onClick: function () {
                 return goUrl('pool');
               },
             },
@@ -306,6 +338,7 @@ function TradePageInner() {
       react_1['default'].createElement(
         antd_1.Row,
         {
+          className: 'h5-head',
           align: 'middle',
           style: {
             paddingLeft: 5,

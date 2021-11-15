@@ -18,6 +18,7 @@ import {
   PhantomWalletAdapter,
   SolletExtensionAdapter,
   MathWalletAdapter,
+  BloctoWalletAdapter
 } from '../wallet-adapters';
 
 const ASSET_URL =
@@ -63,7 +64,21 @@ export const WALLET_PROVIDERS = [
     icon: `${ASSET_URL}/mathwallet.svg`,
     adapter: MathWalletAdapter,
     iconName: 'MathWallet'
-  }
+  },
+  {
+    name: 'Blocto',
+    // url: 'https://www.mathwallet.org',
+    icon: `${ASSET_URL}/mathwallet.svg`,
+    adapter: BloctoWalletAdapter,
+    iconName: 'Unknown'
+  },
+  {
+    name: 'Bonfida',
+    url: 'https://bonfida.com/wallet',
+    icon: `${ASSET_URL}/mathwallet.svg`,
+    adapter: BloctoWalletAdapter,
+    iconName: 'Bonfida'
+  },
 ];
 
 const WalletContext = React.createContext<null | WalletContextValues>(null);

@@ -7,6 +7,8 @@ import LiquidityIcon from '../../assets/img/leftbar_liquidity@2x.png';
 import MinningIcon from '../../assets/img/leftbar_minning_selected@2x.png';
 import SwapIcon from '../../assets/img/leftbar_swap_selected@2x.png';
 import TradingIcon from '../../assets/img/crema/icon-Trading@2x.png';
+import mainNetLogo from '../../assets/img/crema/tag-Mainnet.png'
+
 // import MenuOpenedIcon from '../../assets/img/icon_menuOpened@2x.png';
 // import MenuUpIcon from '../../assets/img/icon_menuUp@2x.png';
 // import { createDecipheriv } from 'crypto';
@@ -32,6 +34,7 @@ export const H5Header = () => {
         <div className="top">
           <div className="left">
             <img src={LogoImg} />
+            <img style={{height:'16px',marginLeft:'10px'}} src={mainNetLogo} alt="" />
           </div>
           <div className="right">
             {!showMenu ? (
@@ -60,10 +63,10 @@ export const H5Header = () => {
                 <img src={TradingIcon} />
                 <span>Trading</span>
               </li>
-              {/* <li onClick={() => goUrl('swap')} className="swap-menu">
+              <li onClick={() => goUrl('swap')} className="swap-menu">
                 <i></i>
                 <span>Swap</span>
-              </li> */}
+              </li>
               <li className="have-sub-menu" onClick={() => goUrl('pool')}>
                 <div
                   className="title"
