@@ -97,6 +97,10 @@ export const H5Header = () => {
                   <li onClick={() => goUrl('farming')}>LP Farming</li>
                 </ul> */}
               </li>
+              <li onClick={() => goUrl('farming')} className="farming-menu">
+                <i></i>
+                <span>Farming</span>
+              </li>
               {/* <li onClick={() => goUrl('staking')} className="staking-menu">
                 <i></i>
                 <span>Staking</span>

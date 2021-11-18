@@ -31,6 +31,8 @@ import '../assets/css/tradePage/index.less';
 import TradeIcon from '../assets/img/crema/icon-Trading@2x.png'
 import SwapIcon from '../assets/img/crema/icon-Swap@2x.png'
 import PoolsIcon from '../assets/img/crema/icon-Pools@2x.png'
+import FarmingIcon from '../assets/img/crema/icon-Farming@2x.png'
+
 import StakingIcon from '../assets/img/crema/icon-Staking@2x.png'
 import SRMICon from '../assets/img/crema/SRM.png'
 import USDTIcon from '../assets/img/crema/icon_coin_usdt@2x.png'
@@ -216,6 +218,12 @@ function TradePageInner() {
             <div className="menu-item" onClick={() => goUrl('pool')}>
               <img className='page-icon' src={PoolsIcon} alt="" />
               <span>Pools</span>
+            </div>
+          </Col>
+          <Col style={{ padding: '8px 17px', marginRight: '7px', color: 'rgba(255,255,255,0.5)' }}>
+            <div className="menu-item" onClick={() => goUrl('farming')}>
+              <img className='page-icon' src={FarmingIcon} alt="" />
+              <span>Farming</span>
             </div>
           </Col>
           {/* <Col style={{ padding: '8px 17px', color: 'rgba(255,255,255,0.5)' }}>

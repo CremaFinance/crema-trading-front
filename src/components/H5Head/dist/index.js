@@ -121,6 +121,17 @@ exports.H5Header = function () {
                 react_1['default'].createElement('span', null, 'Pools'),
               ),
             ),
+            react_1['default'].createElement(
+              'li',
+              {
+                onClick: function () {
+                  return goUrl('farming');
+                },
+                className: 'farming-menu',
+              },
+              react_1['default'].createElement('i', null),
+              react_1['default'].createElement('span', null, 'Farming'),
+            ),
           ),
           react_1['default'].createElement(
             'div',
