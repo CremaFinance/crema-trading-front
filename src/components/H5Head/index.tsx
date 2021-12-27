@@ -34,7 +34,7 @@ export const H5Header = () => {
         <div className="top">
           <div className="left">
             <img src={LogoImg} />
-            <img style={{height:'16px',marginLeft:'10px'}} src={mainNetLogo} alt="" />
+            {/* <img style={{height:'16px',marginLeft:'10px'}} src={mainNetLogo} alt="" /> */}
           </div>
           <div className="right">
             {!showMenu ? (

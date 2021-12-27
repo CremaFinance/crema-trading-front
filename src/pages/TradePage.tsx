@@ -200,7 +200,7 @@ function TradePageInner() {
         >
           <Col style={{display: 'flex',alignItems:'center'}}>
             <div className="logo"></div>
-            <img style={{height:'16px',marginRight:'10px'}} src={mainNetLogo} alt="" />
+            {/* <img style={{height:'16px',marginRight:'10px'}} src={mainNetLogo} alt="" /> */}
           </Col>
           <Col style={{ padding: '2px', borderRadius: '8px', marginRight: '28px', background: 'linear-gradient(214deg, #59BDAD 0%, #6676F5 61%, #9A89F9 76%, #EBA7FF 100%)' }}>
             <div className="menu-item-active">

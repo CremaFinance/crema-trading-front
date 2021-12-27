@@ -5,7 +5,6 @@ var react_1 = require('react');
 require('./index.less');
 var logo_2x_2x_png_1 = require('../../assets/img/crema/logo@2x@2x.png');
 var icon_Trading_2x_png_1 = require('../../assets/img/crema/icon-Trading@2x.png');
-var tag_Mainnet_png_1 = require('../../assets/img/crema/tag-Mainnet.png');
 // import MenuOpenedIcon from '../../assets/img/icon_menuOpened@2x.png';
 // import MenuUpIcon from '../../assets/img/icon_menuUp@2x.png';
 // import { createDecipheriv } from 'crypto';
@@ -36,11 +35,6 @@ exports.H5Header = function () {
         { className: 'left' },
         react_1['default'].createElement('img', {
           src: logo_2x_2x_png_1['default'],
-        }),
-        react_1['default'].createElement('img', {
-          style: { height: '16px', marginLeft: '10px' },
-          src: tag_Mainnet_png_1['default'],
-          alt: '',
         }),
       ),
       react_1['default'].createElement(
