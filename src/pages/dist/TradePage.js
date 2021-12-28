@@ -405,7 +405,7 @@ function TradePageInner() {
 function goUrl(url) {
   // window.location.href = `https://app.hydraswap.io/${url}`
   // let href = `https://app.hydraswap.io/${url}`
-  var href = 'https://app.crema.finance/#/' + url;
+  var href = 'https://beta.crema.finance/#/' + url;
   // let href = `https://www.hydratest.xyz/${url}`;
   var a = document.createElement('a');
   a.setAttribute('href', href);

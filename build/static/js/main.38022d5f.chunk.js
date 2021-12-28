@@ -10131,7 +10131,7 @@
         );
       }
       function Ga(e) {
-        var t = 'https://app.crema.finance/#/'.concat(e),
+        var t = 'https://beta.crema.finance/#/'.concat(e),
           n = document.createElement('a');
         n.setAttribute('href', t),
           n.setAttribute('target', '_blank'),
@@ -11510,7 +11510,7 @@
             s = c[0],
             l = c[1];
           function d(e) {
-            var t = 'https://app.crema.finance/#/'.concat(e),
+            var t = 'https://beta.crema.finance/#/'.concat(e),
               n = document.createElement('a');
             n.setAttribute('href', t),
               n.setAttribute('target', '_blank'),
@@ -14375,4 +14375,4 @@
   },
   [[463, 1, 2]],
 ]);
-//# sourceMappingURL=main.f7e05231.chunk.js.map
+//# sourceMappingURL=main.38022d5f.chunk.js.map

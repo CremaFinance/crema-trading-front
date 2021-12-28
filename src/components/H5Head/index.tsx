@@ -21,7 +21,7 @@ export const H5Header = () => {
     function goUrl(url) {
 
         // window.location.href = `https://app.hydraswap.io/${url}`
-        let href = `https://app.crema.finance/#/${url}`
+        let href = `https://beta.crema.finance/#/${url}`
         // let href = `https://www.hydratest.xyz/${url}`;
         let a = document.createElement('a');
         a.setAttribute('href', href);

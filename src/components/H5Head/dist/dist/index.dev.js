@@ -24,7 +24,7 @@ exports.H5Header = function () {
 
   function goUrl(url) {
     // window.location.href = `https://app.hydraswap.io/${url}`
-    var href = 'https://app.crema.finance/' + url; // let href = `https://www.hydratest.xyz/${url}`;
+    var href = 'https://beta.crema.finance/#/' + url; // let href = `https://www.hydratest.xyz/${url}`;
 
     var a = document.createElement('a');
     a.setAttribute('href', href);
@@ -103,6 +103,17 @@ exports.H5Header = function () {
                 src: icon_Trading_2x_png_1['default'],
               }),
               react_1['default'].createElement('span', null, 'Trading'),
+            ),
+            react_1['default'].createElement(
+              'li',
+              {
+                onClick: function onClick() {
+                  return goUrl('jupswap');
+                },
+                className: 'swap-menu',
+              },
+              react_1['default'].createElement('i', null),
+              react_1['default'].createElement('span', null, 'Swap'),
             ),
             react_1['default'].createElement(
               'li',
