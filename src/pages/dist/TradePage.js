@@ -57,7 +57,6 @@ require('../assets/css/tradePage/index.less');
 var icon_Trading_2x_png_1 = require('../assets/img/crema/icon-Trading@2x.png');
 var icon_Swap_2x_png_1 = require('../assets/img/crema/icon-Swap@2x.png');
 var icon_Pools_2x_png_1 = require('../assets/img/crema/icon-Pools@2x.png');
-var icon_Farming_2x_png_1 = require('../assets/img/crema/icon-Farming@2x.png');
 var SRM_png_1 = require('../assets/img/crema/SRM.png');
 var icon_coin_usdt_2x_png_1 = require('../assets/img/crema/icon_coin_usdt@2x.png');
 var icon_SOL_2x_png_1 = require('../assets/img/crema/icon_SOL@2x.png');
@@ -288,7 +287,7 @@ function TradePageInner() {
             {
               className: 'menu-item',
               onClick: function () {
-                return goUrl('swap');
+                return goUrl('jupswap');
               },
             },
             react_1['default'].createElement('img', {
@@ -322,31 +321,6 @@ function TradePageInner() {
               alt: '',
             }),
             react_1['default'].createElement('span', null, 'Pools'),
-          ),
-        ),
-        react_1['default'].createElement(
-          antd_1.Col,
-          {
-            style: {
-              padding: '8px 17px',
-              marginRight: '7px',
-              color: 'rgba(255,255,255,0.5)',
-            },
-          },
-          react_1['default'].createElement(
-            'div',
-            {
-              className: 'menu-item',
-              onClick: function () {
-                return goUrl('farming');
-              },
-            },
-            react_1['default'].createElement('img', {
-              className: 'page-icon',
-              src: icon_Farming_2x_png_1['default'],
-              alt: '',
-            }),
-            react_1['default'].createElement('span', null, 'Farming'),
           ),
         ),
         react_1['default'].createElement(
@@ -431,7 +405,7 @@ function TradePageInner() {
 function goUrl(url) {
   // window.location.href = `https://app.hydraswap.io/${url}`
   // let href = `https://app.hydraswap.io/${url}`
-  var href = 'https://app.crema.finance/' + url;
+  var href = 'https://app.crema.finance/#/' + url;
   // let href = `https://www.hydratest.xyz/${url}`;
   var a = document.createElement('a');
   a.setAttribute('href', href);

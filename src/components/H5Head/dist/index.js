@@ -17,7 +17,7 @@ exports.H5Header = function () {
     setLiquiditySubMenuIsShow = _b[1];
   function goUrl(url) {
     // window.location.href = `https://app.hydraswap.io/${url}`
-    var href = 'https://app.crema.finance/' + url;
+    var href = 'https://app.crema.finance/#/' + url;
     // let href = `https://www.hydratest.xyz/${url}`;
     var a = document.createElement('a');
     a.setAttribute('href', href);
@@ -88,7 +88,7 @@ exports.H5Header = function () {
               'li',
               {
                 onClick: function () {
-                  return goUrl('swap');
+                  return goUrl('jupswap');
                 },
                 className: 'swap-menu',
               },
@@ -114,17 +114,6 @@ exports.H5Header = function () {
                 react_1['default'].createElement('i', null),
                 react_1['default'].createElement('span', null, 'Pools'),
               ),
-            ),
-            react_1['default'].createElement(
-              'li',
-              {
-                onClick: function () {
-                  return goUrl('farming');
-                },
-                className: 'farming-menu',
-              },
-              react_1['default'].createElement('i', null),
-              react_1['default'].createElement('span', null, 'Farming'),
             ),
           ),
           react_1['default'].createElement(

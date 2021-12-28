@@ -21,7 +21,7 @@ export const H5Header = () => {
     function goUrl(url) {
 
         // window.location.href = `https://app.hydraswap.io/${url}`
-        let href = `https://app.crema.finance/${url}`
+        let href = `https://app.crema.finance/#/${url}`
         // let href = `https://www.hydratest.xyz/${url}`;
         let a = document.createElement('a');
         a.setAttribute('href', href);
@@ -63,7 +63,7 @@ export const H5Header = () => {
                 <img src={TradingIcon} />
                 <span>Trading</span>
               </li>
-              <li onClick={() => goUrl('swap')} className="swap-menu">
+              <li onClick={() => goUrl('jupswap')} className="swap-menu">
                 <i></i>
                 <span>Swap</span>
               </li>
@@ -97,10 +97,10 @@ export const H5Header = () => {
                   <li onClick={() => goUrl('farming')}>LP Farming</li>
                 </ul> */}
               </li>
-              <li onClick={() => goUrl('farming')} className="farming-menu">
+              {/* <li onClick={() => goUrl('farming')} className="farming-menu">
                 <i></i>
                 <span>Farming</span>
-              </li>
+              </li> */}
               {/* <li onClick={() => goUrl('staking')} className="staking-menu">
                 <i></i>
                 <span>Staking</span>

@@ -209,7 +209,7 @@ function TradePageInner() {
             </div>
           </Col>
           <Col style={{ padding: '8px 17px', marginRight: '7px', color: 'rgba(255,255,255,0.5)' }}>
-            <div className="menu-item" onClick={() => goUrl('swap')}>
+            <div className="menu-item" onClick={() => goUrl('jupswap')}>
               <img className='page-icon' src={SwapIcon} alt="" />
               <span>Swap</span>
             </div>
@@ -220,12 +220,12 @@ function TradePageInner() {
               <span>Pools</span>
             </div>
           </Col>
-          <Col style={{ padding: '8px 17px', marginRight: '7px', color: 'rgba(255,255,255,0.5)' }}>
+          {/* <Col style={{ padding: '8px 17px', marginRight: '7px', color: 'rgba(255,255,255,0.5)' }}>
             <div className="menu-item" onClick={() => goUrl('farming')}>
               <img className='page-icon' src={FarmingIcon} alt="" />
               <span>Farming</span>
             </div>
-          </Col>
+          </Col> */}
           {/* <Col style={{ padding: '8px 17px', color: 'rgba(255,255,255,0.5)' }}>
             <div className="menu-item">
               <img className='page-icon' src={StakingIcon} alt="" />
@@ -286,7 +286,7 @@ function TradePageInner() {
 function goUrl(url) {
   // window.location.href = `https://app.hydraswap.io/${url}`
   // let href = `https://app.hydraswap.io/${url}`
-  let href = `https://app.crema.finance/${url}`;
+  let href = `https://app.crema.finance/#/${url}`;
   // let href = `https://www.hydratest.xyz/${url}`;
   let a = document.createElement('a');
   a.setAttribute('href', href);

@@ -27,7 +27,7 @@ export const CustomSidebar = () => {
     function goUrl(url) {
         // window.location.href = `https://app.hydraswap.io/${url}`
         // let href = `https://app.hydraswap.io/${url}`
-        let href = `https://app.crema.finance/${url}`;
+        let href = `https://app.crema.finance/#/${url}`;
         // let href = `https://www.hydratest.xyz/${url}`;
         let a = document.createElement('a');
         a.setAttribute('href', href);
@@ -71,7 +71,7 @@ export const CustomSidebar = () => {
             </svg>
             <span>Trading</span>
           </li>
-          <li onClick={() => goUrl('swap')} className="swap-menu">
+          <li onClick={() => goUrl('jupswap')} className="swap-menu">
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#iconicon-Swap"></use>
             </svg>
